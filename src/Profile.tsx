@@ -48,17 +48,15 @@ export default function Profile() {
 
 
   return (
-    <div className="h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 p-4 md:p-8 relative overflow-hidden">
-    <div 
-    className="absolute inset-0  blur-sm"
-        style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        }}
-    />
-      <div className="absolute inset-0 opacity-20">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 p-4 md:p-8 relative">
+      <img
+        src={backgroundImage}
+        loading="lazy"
+        alt=""
+        className="fixed inset-0 w-full h-full object-cover blur-sm -z-10"
+        aria-hidden="true"
+      />
+      <div className="fixed inset-0 opacity-20 -z-10">
         <div className="absolute top-20 left-20 w-96 h-96 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
@@ -71,7 +69,7 @@ export default function Profile() {
           <DiscordActivity lanyard={lanyard} />
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center pb-8">
           <p className="text-zinc-800 text-sm font-mono">
             Made with ❤️ by Warn
           </p>

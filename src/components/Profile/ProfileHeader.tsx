@@ -39,6 +39,7 @@ export default function ProfileHeader({ lanyard, discordId }: ProfileHeaderProps
                         <img
                             src={`https://cdn.discordapp.com/avatars/${discordId}/${lanyard.discord_user.avatar}.gif?size=256`}
                             alt="Avatar"
+                            loading="lazy"
                             className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-zinc-900"
                             onError={(e) => {
                                 if (lanyard?.discord_user?.avatar) {
@@ -64,7 +65,7 @@ export default function ProfileHeader({ lanyard, discordId }: ProfileHeaderProps
                 <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-4">
                     <DiscordStatus />
                     <div className="px-4 py-2 bg-zinc-800/50 backdrop-blur border border-zinc-700/50 rounded-full text-sm text-zinc-300 font-medium flex items-center gap-2">
-                        <img src={Superawesome} className="w-auto h-6 text-red-400" />
+                        <img loading="lazy" src={Superawesome} className="w-auto h-6 text-red-400" />
                         Superawesome | Developer
                     </div>
                     <div className="px-4 py-2 bg-zinc-800/50 backdrop-blur border border-zinc-700/50 rounded-full text-sm text-zinc-300 font-medium flex items-center gap-2">

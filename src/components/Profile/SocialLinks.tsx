@@ -8,7 +8,7 @@ export default function SocialLinks() {
                 rel="noopener noreferrer"
                 className="p-3 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/30 rounded-xl transition-all duration-300 hover:scale-110"
             >
-                <img className="h-6 w-6" src={Labymod} alt="" />
+                <img loading="lazy" className="h-6 w-6" src={Labymod} alt="" />
             </a>
             <a
                 href="https://discordapp.com/users/823441227071619104"
