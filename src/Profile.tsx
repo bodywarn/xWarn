@@ -53,7 +53,7 @@ export default function Profile() {
         src={backgroundImage}
         loading="lazy"
         alt=""
-        className="fixed inset-0 w-full h-full object-cover blur-sm -z-10"
+        className="fixed inset-0 w-full h-full object-cover blur-sm "
         aria-hidden="true"
       />
       <div className="fixed inset-0 opacity-20 -z-10">
